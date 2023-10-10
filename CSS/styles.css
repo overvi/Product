@@ -11,7 +11,7 @@
     --space : 0.5rem;
     --border-radius : 10px;
 
-    --fs-heading : 2rem;
+    --fs-heading : 2.2rem;
     --fs-title : 0.8rem
 
 
@@ -62,7 +62,7 @@ img {
 }
 
 .wrapper {
-    max-width: 36rem;
+    max-width: 37.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius:  var(--border-radius);
