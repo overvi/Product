@@ -9,7 +9,7 @@
     --White: hsl(0, 0%, 100%);
 
     --space : 0.5rem;
-    --border-radius : 7px;
+    --border-radius : 10px;
 
     --fs-heading : 2rem;
     --fs-title : 0.8rem
@@ -62,7 +62,7 @@ img {
 }
 
 .wrapper {
-    max-width: 35rem;
+    max-width: 36rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius:  var(--border-radius);
@@ -108,6 +108,7 @@ img {
 .btn {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: var(--clr , #fff);
     background-color: var(--bg , var(--Dark-cyan));
     border-radius: var(--border-radius);
