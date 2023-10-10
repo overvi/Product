@@ -1,0 +1,140 @@
+:root {
+   --Dark-cyan: hsl(158, 36%, 37%);
+   --Cream: hsl(30, 38%, 92%);
+
+
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --space : 0.5rem;
+    --border-radius : 7px;
+
+    --fs-heading : 2rem;
+    --fs-title : 0.8rem
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flow-control > *  {
+    margin-top: var( --flow-space , var(--space));
+    margin-bottom: var(--flow-space-bottom , 0);
+    display: inline-block;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.gray-text {
+    color: var(--Dark-grayish-blue);
+}
+
+.ff-mons {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line-h {
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--Cream);
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    font-size: 14px;
+    line-height: 1;
+    font-family: 'Fraunces', serif;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    max-width: 35rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius:  var(--border-radius);
+    overflow: hidden;
+}
+
+.product-details {
+    background-color: var(--White);
+    padding: 1.5rem;
+    display: grid;
+}
+
+.title {
+    letter-spacing: 5px;
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: var(--fs-title);
+}
+
+.heading {
+    font-size: var(--fs-heading);
+    --flow-space-bottom : 0.9rem;
+    --flow-space : 1.5rem
+}
+
+.prices {
+    --flow-space : 0.8rem;
+    --flow-space-bottom : 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space) * 2);
+}
+
+.new-price {
+    color: var(--Dark-cyan);
+    font-size: var(--fs-heading);
+}
+
+.initial-price {
+    text-decoration: line-through;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: var(--clr , #fff);
+    background-color: var(--bg , var(--Dark-cyan));
+    border-radius: var(--border-radius);
+    border: 0;
+    padding: 0.85rem ;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+.btn:hover {
+    background-color: var(--Very-dark-blue);
+}
+
+.btn svg {
+    margin-right: 0.4rem;
+}
+
+@media screen and (max-width : 769px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        max-width: 20rem;
+        margin: auto;
+    }
+
+    .prices {
+        --flow-space-bottom : 0;
+    }
+
+}
